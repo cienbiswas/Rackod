@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS & local stylesheet -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- AJAX / jQuery (CDN: Micosoft)-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- local scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="script.js"></script>
+
+    <title>Ehif Seite</title>
+  </head>
+  <body>
+        <div class="container p-5">
+            <h1>New entry <span class="badge badge-secondary">2EHIF</span></h1>
+        </div>
+
+        <div id="message"></div>
+        
+        <h3 class="container p-1">Description</h3>
+        <div class="container p-1">
+            <div class="input-group mb-3">
+              <input type="text" id="description" class="form-control"  placeholder="Description">
+            </div>
+        </div>
+
+        <h3 class="container p-1">Subject</h3>
+        <div class="container p-1 input-group">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="subject">Options</label>
+            </div>
+            <select class="custom-select" id="subject">
+                <option selected>Choose...</option>
+                <option value="GGPB">GGPB</option>
+                <option value="BWM1">BWM1</option>
+                <option value="AM">AM</option>
+                <option value="E">E</option>
+                <option value="NV">NV</option>
+                <option value="POS">POS</option>
+                <option value="NW2">NW2</option>
+                <option value="DBI">DBI</option>
+                <option value="D">D</option>
+                <option value="BWM3">BWM3</option>
+                <option value="BWM2">BWM2</option>
+                <option value="TINF">TINF</option>
+                <option value="LOGIC">LOGIC</option>
+                <option value="BWM1">BWM1</option>
+                <option value="PE">PE</option>
+            </select>
+        </div>
+
+        <br>
+        <h3 class="container p-1">Priority</h3>
+        <div class="container p-1 input-group">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="priority">Options</label>
+            </div>
+            <select class="custom-select" id="priority">
+                <option selected>Choose...</option>
+                <option value="0">Test</option>
+                <option value="1">Exam</option>
+                <option value="2">Homework</option>
+                <option value="3">Revision</option>
+                <option value="4">Presentation</option>
+                <option value="5">Hand-in</option>
+                <option value="6">Other...</option>
+            </select>
+        </div>
+
+        <br>
+        <h3 class="container p-2">Until</h3>
+        <div class="container p-2">
+            <div class="input-group mb-3">
+              <input type="date" id="until" class="form-control">
+            </div>
+        </div>
+
+        <h3 class="container p-2">Displayed until:</h3>
+        <div class="container p-2">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="displayed12" value="12">
+                <label class="form-check-label" for="inlineRadio1">12:00</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="displayed24" value="24" checked>
+                <label class="form-check-label" for="inlineRadio2">24:00</label>
+            </div>
+        </div>
+
+        <br>
+        <div class="container p-1">
+            <button type="button" onclick="postEntry()" class="btn btn-secondary btn-lg btn-block">Post Entry</button>
+        </div>
+
+
+        <!--     FOOTER     -->
+
+
+        <div class="footer">
+            <div class="logo">
+                Rackod
+            </div>
+            <div class="container-content">
+
+                <div class="container-footer">
+                    <div class="column-item">
+                        <div class="heading">
+                            Website
+                        </div>
+                        <a href="#">About</a> <br>
+                        <a href="#">Jobs</a> <br>
+                        <a href="#">Developer</a>
+                    </div>
+                    <div class="column-item">
+                        <div class="heading">
+                            Account
+                        </div>
+                        <a href="#">Register</a> <br>
+                        <a href="#">Login</a> <br>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="column-item">
+                        <div class="heading">
+                            Contact
+                        </div>
+                        <a href="#">Support</a> <br>
+                        <a href="#">E-Mail</a> <br>
+                    </div>
+                </div>
+
+
+                <div class="social-media">
+                    <span class="social-media-icon">
+                        <a href="#" class="fa fa-twitter"></a>
+                    </span>
+                    <span class="social-media-icon">
+                        <a href="#" class="fa fa-facebook"></a>
+                    </span>
+                    <span class="social-media-icon">
+                        <a href="#" class="fa fa-instagram"></a>
+                    </span>
+                </div>
+
+
+                <div class="line">
+                    <span class="ahref">
+                        Impressum
+                    </span>
+                    <span class="ahref">
+                        Data Policy
+                    </span>
+                    <span class="ahref">
+                        Cookies
+                    </span>
+                </div>
+
+
+                <div class="c-right">
+                    &copy; 2020 Course - Rackod. All rights reserved.
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

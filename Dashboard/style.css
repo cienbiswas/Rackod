@@ -1,0 +1,84 @@
+#content-wrapper {
+
+}
+
+header {
+
+}
+
+nav {
+
+}
+
+#nav-mobile{
+    display: none;
+}
+
+.hamburger-menu-icon{
+    width: 35px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.808);
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+#nav-wrapper{
+    display: block;
+    background-color: #56e912;
+    padding: 25px;
+    height: 50em;
+    float: left;
+}
+
+#logo {
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+}
+
+.category {
+    margin: 10px 0px 10px 0px;
+}
+
+.nav-content-title-text{
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 20px 0px 20px 0px;
+}
+
+.my-course-text::before{
+    content: "# ";
+}
+
+main{
+
+}
+
+aside{
+
+}
+
+footer{
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    #nav-wrapper{
+        background-color: #56e912;
+        padding: 25px;
+        display: none;
+    }
+
+    @keyframes navMove {
+        from {width: 30%;}
+        to {width: 100%;}
+    }
+
+    #nav-mobile{
+        display: block;
+        float: left;
+        margin: 10px 0px 0px 10px;
+    }
+
+}

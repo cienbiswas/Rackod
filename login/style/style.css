@@ -1,0 +1,22 @@
+
+
+*:fous {
+    outline: none;
+}
+
+.badge-secondary a {
+    text-decoration: none;
+    color: white;
+}
+
+/* media queries */
+@media (max-width: 500px) {
+    .table {
+        font-size: 70% !important;
+    }
+}
+@media (min-width: 1000px) {
+    .table {
+        font-size: 150% !important;
+    }
+}
