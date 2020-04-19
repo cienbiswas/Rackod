@@ -12,7 +12,7 @@ Thus, only one person per homework/revision/exam has to post it.
 
 <br>
 
-## Structure - Theory
+## Structure of an Entry - Theory
 
 Date
 ---
@@ -23,7 +23,7 @@ Date
 
 <br>
 
-## Structure - Example
+## Structure of an Entry - Example
 
 Mon Mar 02 2020
 ---
