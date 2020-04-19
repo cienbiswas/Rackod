@@ -1,7 +1,6 @@
 # Rackod
 
-Rackod is a project from @moritzmitterdorfer
-moritzmitterdorfer and @cienbiswas for school purposes.
+Rackod is a project from @moritzmitterdorfer and @cienbiswas for school purposes.
 
 <br>
 
